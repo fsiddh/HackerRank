@@ -1,0 +1,9 @@
+N = int(input())
+dictionary = {}
+
+for i in range(0, N):
+    details = input().split()
+    marks = list(map(float, details[1:])) 
+    dictionary[details[0]] = sum(marks)/float(len(marks))
+
+print("%.2f" % dictionary[input()]) 
