@@ -1,0 +1,33 @@
+list1 = ['insert', 'print', 'remove', 'append', 'sort', 'pop', 'reverse']
+# int_fn = []
+result = []
+n = int(input())
+
+for i in range(n):
+
+    fn = input().split()
+
+    """for j in range(1, len(fn)):
+        int_fn.append(int(fn[j]))"""
+
+    # print(type(fn[0]), type(int(fn[1])), type(fn[2]))
+    if list1[0] == fn[0]:
+        result.insert(int(fn[1]), int(fn[2]))
+
+    elif list1[1] == fn[0]:
+        print(result)
+
+    elif list1[2] == fn[0]:
+        result.remove(int(fn[1]))
+
+    elif list1[3] == fn[0]:
+        result.append(int(fn[1]))
+
+    elif list1[4] == fn[0]:
+        result.sort()
+
+    elif list1[5] == fn[0]:
+        result.pop()
+
+    elif list1[6] == fn[0]:
+        result.reverse()
