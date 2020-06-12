@@ -1,0 +1,15 @@
+def main(letter):
+    if letter.isupper():
+        return letter.lower()
+    if letter.islower():
+        return letter.upper()
+    return letter
+
+
+def swap_case(s):
+    return ''.join(map(main, s))
+
+
+if __name__ == '__main__':
+    s = input()
+    print(swap_case(s))
