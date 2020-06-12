@@ -1,0 +1,9 @@
+def split_and_join(strings):
+    strings_list = strings.split(' ')
+    string = '-'.join(strings_list)
+    return string
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
