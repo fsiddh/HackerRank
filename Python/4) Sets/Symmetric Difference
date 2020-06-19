@@ -1,0 +1,15 @@
+n = int(input())
+set1_elmnts = input().split()
+set1 = set(map(int, set1_elmnts))
+
+m = int(input())
+set2_elmnts = input().split()
+set2 = set(map(int, set2_elmnts))
+
+r1 = set1 - set2
+r2 = set2 - set1
+
+result = r1.union(r2)
+
+for i in sorted(result):
+    print(i)
