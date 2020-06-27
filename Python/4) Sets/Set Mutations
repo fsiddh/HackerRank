@@ -1,0 +1,2 @@
+elementsno_setA = int(input())
+setA_elements = set(map(int, input().split()))
